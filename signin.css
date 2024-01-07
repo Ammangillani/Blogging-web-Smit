@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -25,7 +26,7 @@
 
 .mainheading h2 {
     font-size: 23px;
-    font-family: sans-serif;
+    font-family: poppins;
     background-color: aqua;
     border: 2px solid wheatlkl;
 }
