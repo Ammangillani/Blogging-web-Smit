@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: "poppins";
 }
 
 
@@ -10,7 +10,7 @@
 .main {
     width: 100vw;
     height: 100vh;
-    background-color: yellow;
+    background: #c1c1c1d1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,27 +19,29 @@
 }
 
 .mainheading {
+    width: 100%;
+    height: 55px;
+    background-color: hsl(0, 0%, 76%);
     position: absolute;
-    top: 1px;
-    left: 0;
+    inset: 0;
+    border: 1px solid rgba(3, 90, 112, 0.744);
 }
 
 .mainheading h2 {
-    font-size: 23px;
-    font-family: poppins;
-    background-color: aqua;
-    border: 2px solid wheatlkl;
+    font-size: 40px;
+    font-family: outfit;
+    margin: 0 10px;
+
 }
 
 .container {
     width: 440px;
     height: 440px;
-    background: darkblue;
+    background: #c1c1c1;
     border-radius: 4px;
-    filter: drop-shadow(2px 2px 8px #fff);
-    /* box-shadow: 2px 4px 8px rebeccapurple,
-        -2px -4px 8px rebeccapurple,
-        -2px -4px 8px rebeccapurple; */
+    /* filter: drop-shadow(2px 2px 8px #fff); */
+    box-shadow: inset 1px 1px 4px rgba(3, 90, 112, 0.744),
+        inset -1px -1px 4px #11111190;
 
 }
 
@@ -53,11 +55,35 @@
     padding: 2rem 0;
 }
 
+.wrapper h2 {
+    font-size: 28px;
+}
+
 .wrapper input {
-    /* padding: 10px; */
-    padding-inline: 25px;
-    padding-block: 6px;
+
+    padding-inline: 29px;
+    padding-block: 10px;
     border: none;
     border-radius: 4px;
-    outline: none;
+    outline: 1px solid rgba(3, 90, 112, 0.744);
+    box-shadow: inset -3px -3px 8px #f1f1f1,
+        inset -2px -2px 4px #030000c4;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    transform: scale(1);
+
+
+}
+
+.buttons :hover {
+    transform: scale(1.1);
+
+}
+
+.buttons :active {
+    scale: 0.8;
 }

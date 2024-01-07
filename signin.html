@@ -4,24 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="signin.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
 </head>
 
 <body>
     <div class="main">
         <div class="mainheading">
             <h2>Blogging app</h2>
-            <h4>Signup</h4>
         </div>
         <div class="container">
             <div class="wrapper">
+                <h2>
+                    Sign Up
+                </h2>
+                <input type="text" id="fname" placeholder="First name">
+                <input type="text" id="lname" placeholder="Last name">
                 <input type="email" id="email" placeholder="Email">
                 <input type="password" id="password" placeholder="Password">
-                <input type="button" id="signupbutton" value="Sign in">
+                <input type="password" id="confirmpassword" placeholder="Confirm Password">
+                <div class="buttons">
+                    <a href="#"><input type="button" id="signupbutton" value="Sign up"></a>
+                    <a href="./signin.html"><input type="button" id="signupbutton" value="Login"></a>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
