@@ -45,3 +45,16 @@
 .nav a:hover {
     text-decoration: underline;
 }
+
+
+.wrapper input {
+
+    padding-inline: 29px;
+    padding-block: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 1px solid rgba(3, 90, 112, 0.744);
+    box-shadow: inset -3px -3px 8px #f1f1f1,
+        inset -2px -2px 4px #030000c4;
+    cursor: pointer;
+}
