@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center; */
     position: relative;
+    overflow-x: hidden;
 }
 
 .nav {
@@ -47,27 +48,31 @@
 }
 
 .dashboardwrapper {
+    /* height: 100%;
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
-
-
+    align-items: flex-start;
+    justify-content: ; */
+    padding: 1rem 4rem;
 }
 
 
 .dashboardwrapper form {
-    width: 440px;
-    height: 440px;
+    width: 540px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
     background: #c1c1c1;
+    padding: 1rem 1rem;
     border-radius: 4px;
-    /* filter: drop-shadow(2px 2px 8px #fff); */
     box-shadow: inset 1px 1px 4px rgba(3, 90, 112, 0.744),
         inset -1px -1px 4px #11111190;
 }
 
 .dashboardwrapper form input {
-
-    padding-inline: 29px;
+    width: 32rem;
+    padding-inline: 20px;
     padding-block: 10px;
     border: none;
     border-radius: 4px;
@@ -75,4 +80,41 @@
     box-shadow: inset -3px -3px 8px #f1f1f1,
         inset -2px -2px 4px #030000c4;
     cursor: pointer;
+    text-transform: capitalize;
+}
+
+.dashboardwrapper form textarea {
+    width: 32rem;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 1px solid rgba(3, 90, 112, 0.744);
+    box-shadow: inset -3px -3px 8px #f1f1f1,
+        inset -2px -2px 4px #030000c4;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.dashboardwrapper form textarea::placeholder {
+    font-size: 14px;
+    color: rgba(3, 90, 112, 0.744);
+}
+
+.dashboardwrapper form input::placeholder {
+    font-size: 14px;
+    color: rgba(3, 90, 112, 0.744);
+}
+
+.dashboardwrapper form #Publishbutton {
+    /* margin-top: 10px; */
+    padding-inline: 20px;
+    padding-block: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 1px solid rgba(3, 90, 112, 0.744);
+    box-shadow: inset -3px -3px 8px #f1f1f1,
+        inset -2px -2px 4px #030000c4;
+    cursor: pointer;
+    text-transform: capitalize;
 }
